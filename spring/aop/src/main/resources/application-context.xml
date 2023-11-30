@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- Enable AspectJ style of Spring AOP -->
+    <aop:aspectj-autoproxy/>
+
+    <bean name="pedidoService"
+          class="com.domingosuarez.talks.y2023.m11.javamexico.services.implementation.DefaultPedidoService"/>
+
+    <bean name="fooService" class="com.domingosuarez.talks.y2023.m11.javamexico.services.FooService"/>
+
+    <!-- Configure Aspect Beans, without this Aspects advices wont execute -->
+    <bean name="auditAspect" class="com.domingosuarez.talks.y2023.m11.javamexico.aop.advice.AuditoriaAspect"/>
+
+</beans>

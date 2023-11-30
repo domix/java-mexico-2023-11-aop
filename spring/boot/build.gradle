@@ -1,0 +1,40 @@
+plugins {
+	id 'java'
+    id 'io.freefair.lombok'
+	id 'org.springframework.boot' version '3.2.0'
+	id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'com.domingosuarez.talks.y2023.m11.javamexico.aop'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '17'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    implementation 'org.aspectj:aspectjweaver:1.9.20'
+    implementation 'org.aspectj:aspectjtools:1.9.20'
+    runtimeOnly 'org.aspectj:aspectjrt:1.9.20'
+
+
+    implementation project(':business')
+    implementation project(':advices')
+
+	runtimeOnly 'com.h2database:h2'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

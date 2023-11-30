@@ -1,0 +1,15 @@
+pluginManagement {
+    plugins {
+        id 'io.freefair.lombok' version '8.4'
+    }
+}
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.7.0'
+}
+
+rootProject.name = 'java-mexico-2023-11-aop'
+include('advices')
+include('business')
+
+include('spring:aop')
+include('spring:boot')

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/advices/java-mexico-2023-11-aop.advices.main.iml" filepath="$PROJECT_DIR$/.idea/modules/advices/java-mexico-2023-11-aop.advices.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/business/java-mexico-2023-11-aop.business.main.iml" filepath="$PROJECT_DIR$/.idea/modules/business/java-mexico-2023-11-aop.business.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/business/java-mexico-2023-11-aop.business.test.iml" filepath="$PROJECT_DIR$/.idea/modules/business/java-mexico-2023-11-aop.business.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring/aop/java-mexico-2023-11-aop.spring.aop.main.iml" filepath="$PROJECT_DIR$/.idea/modules/spring/aop/java-mexico-2023-11-aop.spring.aop.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring/aop/java-mexico-2023-11-aop.spring.aop.test.iml" filepath="$PROJECT_DIR$/.idea/modules/spring/aop/java-mexico-2023-11-aop.spring.aop.test.iml" />
+    </modules>
+  </component>
+</project>
